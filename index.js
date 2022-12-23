@@ -74,3 +74,28 @@ function getSumOfGrades(student) {
 
 // Sample usage - do not modify
 getSumOfGrades(student); // 75
+
+ //task. Имя пользователя
+ const users = [
+  {
+    firstName: "Sam",
+    lastName: "Blue",
+    age: 21,
+  },
+{
+  firstName: "Charlie",
+  lastName: "Bon",
+  age: 38,
+}
+];
+
+/**
+* @param {{firstName: String, lastName: String, age: Number}[]} users
+*/
+function getLastUserFullName(users) {
+  return `${users[1].firstName} ${users[1].lastName}`
+}
+
+
+// Sample usage - do not modify
+getLastUserFullName(users); // "Charlie Bon"
