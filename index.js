@@ -50,3 +50,27 @@ const user1 = {
   // Sample usage - do not modify
   addNumberOfChapters(course1, 80); // { name: 'Learn English', isCompleted: true, numberOfChapters: 80 }
   addNumberOfChapters(course2, 60); // { name: 'Learn JavaScript', isCompleted: false, numberOfChapters: 60 }
+
+  //task. Сумма оценок
+const student = {
+  name: "Sam Doe",
+  age: 24,
+  grades: [13, 15, 15, 14, 18]
+};
+
+/**
+ * @param {Object} student
+ * @param {string} student.name
+ * @param {number} student.age
+ * @param {number[]} student.grades
+ */
+function getSumOfGrades(student) {
+  let sum = student.grades.reduce(
+    (total, current) => total + current,
+    0
+  ); return sum;
+}
+
+
+// Sample usage - do not modify
+getSumOfGrades(student); // 75
