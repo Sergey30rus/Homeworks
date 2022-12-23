@@ -165,3 +165,30 @@ function getSumGrades(students1) {
 
 // Sample usage - do not modify
 getSumGrades(students1); // 37
+
+const users1 = [
+  {
+    firstName: "Sam",
+    lastName: "Blue",
+    age: 21,
+  },
+  {
+    firstName: "Charlie",
+    lastName: "Bon",
+    age: 38,
+  }
+];
+
+/**
+ * @param {{firstName: String, lastName: String, age: Number}[]} users
+ */
+function getFullNames(users1) {
+  let arr = []
+  for(i = 0; i < users1.length; i++) {
+    arr.push(`${users[i].firstName} ${users[i].lastName}`)
+  }; return arr 
+}
+
+
+// Sample usage - do not modify
+getFullNames(users1); // [Sam Blue, Charlie Bon]
